@@ -3,14 +3,17 @@
 //Comentario Sass
 
 
-@use "./generales/variables";
-@use "./generales/reset";
-@use "./generales/headerFooter";
-@use "./page/index";
-@use "./page/inicio";
-@use "./page/sobre-mi";
-@use "./page/proyectos";
-@use "./page/contacto";
+@use "./utilities/variables";
+@use "./utilities/reset";
+@use "./utilities/mixins";
+@use "./base/base";
+@use "./base/tipografia";
+@use "./components/buttons";
+@use "./components/cards";
+@use "./layout/footer";
+@use "./layout/header";
+@use "./layout/mediaQueries";
+@use "./layout/nav";
 
-@use "./generales/mediaQueries";
+@use "./layout/mediaQueries";
 
