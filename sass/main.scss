@@ -1,0 +1,16 @@
+/*Comentario css*/
+
+//Comentario Sass
+
+
+@use "./generales/variables";
+@use "./generales/reset";
+@use "./generales/headerFooter";
+@use "./page/index";
+@use "./page/inicio";
+@use "./page/sobre-mi";
+@use "./page/proyectos";
+@use "./page/contacto";
+
+@use "./generales/mediaQueries";
+
