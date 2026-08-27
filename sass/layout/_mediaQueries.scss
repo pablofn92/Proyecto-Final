@@ -1,3 +1,8 @@
-@use "../utilities/reset" as*;
 @use "../utilities/variables" as*;
 @use "../utilities/mixins" as*;
+
+$grid-breakpoints: (
+  tablet: 768px,
+  desktop: 1024px,
+);
+

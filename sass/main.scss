@@ -2,9 +2,8 @@
 
 //Comentario Sass
 
-
-@use "./utilities/variables";
 @use "./utilities/reset";
+@use "./utilities/variables";
 @use "./utilities/mixins";
 @use "./base/base";
 @use "./base/tipografia";
@@ -12,7 +11,6 @@
 @use "./components/cards";
 @use "./layout/footer";
 @use "./layout/header";
-@use "./layout/mediaQueries";
 @use "./layout/nav";
 
 @use "./layout/mediaQueries";
