@@ -47,9 +47,8 @@ nav .navbar {
   height: 70px;
 }
 
-/* Tu fondo personalizado oscuro y opaco para el nicho de miniaturas */
 .bg-dark-custom {
-  background-color: #6b1414 !important; /* Gris oscuro profundo, ideal para resaltar fotos */
+  background-color: #0f0f0f;
 }
 
 /* Asegura que los textos del menú se lean correctamente sobre fondo oscuro */

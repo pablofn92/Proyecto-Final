@@ -13,128 +13,133 @@
 </head>
 
 <body>
-    <header>                        
-      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                     <ul class="navbar-nav">
-                      <li class="nav-item">
-                       <a class="nav-link active" aria-current="page" href="./pages/1.html">1</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./pages/2.html">2</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./pages/3.html">3</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown link
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./pages/4.html">4</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-    </header>
-
-
-    <main>
-        
-
-        <div class="titulo-index">
-                    <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-              <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"   aria-controls="collapseOne">BIENVENIDO!
-                   </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                 <div class="accordion-body">
-                    <strong>Hola! Soy Pablo y estoy comenzando a introducirme en el mundo del desarrollo web y la programación.</strong><br>Esta pagina se encuentra en desarrollo con el fin de aprender. Acá vas a encontrar información sobre mi y mis proyectos, decorando con datos y tematica de HOLLOW KNIGHT.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Los primeros pasos.
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>La base de un nuevo mundo, en desarrollo...</strong><br><img src="./assets/img/Myla_Singing_HollowKnight.webp" alt="Imagen de Myla">
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Agradecimientos.
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>Team Cherry</strong>, desarrolladora del juego en el que me basé para hacer la temática de la página.<br> Y por sobre todo a mi mujer, <strong>Valeria</strong>, quien me apoya en todos mis proyectos.
-          </div>
-        </div>
+<header class="fixed-top">                        
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom border-bottom border-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="logo animate__animated animate__fadeIn" src="./assets/img/logo-pagina.jpg" alt="Logo Pagina">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto"> 
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./pages/1.html">1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/2.html">2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/3.html">3</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown link</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="./pages/4.html">4</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
+</header>
+    <main>
+      
+        <div class="container hero-content animate__animated animate__fadeInUp">
+            <h1>El Arte a Escala en un Solo Lugar</h1>
+            <p>Explorá universos en miniatura, modelos históricos y colecciones listas para el campo de batalla.</p>
+            <a href="#galeria" class="btn">Ver Colección</a>
+        </div>
+    </section>
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button"               data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./assets/img/miniaturas.jpg" class="d-block w-100" alt="Miniaturas-en-blanco">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/pinturas-acrilicas.jpg" class="d-block w-100" alt="Pinturas-acrilicas">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/impresora-3d.jpg" class="d-block w-100" alt="impresoras-3d">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<section id="galeria" class="container sections-padding">
+        <h2 class="section-title">Miniaturas Destacadas</h2>
+        <div class="gallery-grid">
+            <!-- Item 1 -->
+            <div class="gallery-item">
+                <img src="./assets/img/shaneesh-defiler.jpeg" alt="Miniatura 1">
+                <div class="gallery-info">
+                    <span class="gallery-tag">Pintado a Mano</span>
+                    <h3>Guerrero del Caos</h3>
+                    <p>Escala 32mm. Detalle en armadura oxidada y efectos de luz (OSL).</p>
                 </div>
-
-          <section class="index1">
-                <h2>El Juramento:</h2>
-                <article>
-                <h2>No hay precio tan alto...</h2>
-                    <p>Sin mente para pensar.<br>
-                        Sin voluntad que quebrar.<br>
-                        Sin voz que grite de sufrimiento.<br>
-                        Nacido de Dios y el Vacío.<br>
-                        Sellarás la luz cegadora que asola sus sueños.<br>
-                        Eres el Receptáculo.<br>
-                        Eres el HOLLOW KNIGHT.</p>
-                    </article>
-              </section>
-
-                <section class="index2">
-                    <h2>Historia de Hallownest</h2>
-        <article>
-            <h3>El Auge y Caída de un Reino Subterráneo</h3>
-                <p><strong>Hallownest</strong> es un vasto reino en ruinas habitado por insectos antropomórficos. Fundado por el misterioso <strong>Rey Pálido</strong>, el reino prometía expandir la mente y civilizar a sus habitantes. Sin embargo, una antigua fuerza conocida como <strong>El Destello (The Radiance)</strong> comenzó a corromper las mentes de los bichos mediante una plaga de sueños e infección, llevando a Hallownest a una trágica y silenciosa decadencia física y mental.</p>
-        </article>
-                </section>
-
-            <section class="index3">
-              <h2>El Héroe Silencioso</h2>
-                <article>
-                    <h3>El Caballero y los Recipientes</h3>
-                        <p>El protagonista, conocido simplemente como <strong>El Caballero</strong>, es una criatura pequeña y sin voz que empuña un viejo <strong>Aguijón</strong>. Su origen está ligado a los experimentos oscuros del rey: es un <strong>Recipiente (Vessel)</strong>, un ser creado a partir del Vacío diseñado específicamente para no tener mente, voluntad ni emociones. Su objetivo principal es contener la infección dentro de su propio cuerpo para salvar lo que queda del reino.</p>
-                </article>
-            </section>
-
-            <section class="index4">
-                <h2>Sistema de Juego</h2>
-                    <article>
-                        <h3>Combate, Amuleto y Exploración Metroidvania</h3>
-                            <p>Hollow Knight destaca por su control preciso y exploración no lineal. El combate se basa en golpes de corta distancia y el uso de <strong>Alma</strong> para lanzar hechizos o curarse. La personalización del estilo de juego se realiza mediante el sistema de <strong>Amuletos (Charms)</strong>, los cuales consumen muescas limitadas y otorgan habilidades únicas, como mayor alcance del arma, curación acelerada o invocación de aliados.</p>
-                    </article>
-              </section>
+            </div>
+            <!-- Item 2 -->
+            <div class="gallery-item">
+                <img src="./assets/img/mecha-de-asalto.jpg" alt="Miniatura 2">
+                <div class="gallery-info">
+                    <span class="gallery-tag">Impresión 3D</span>
+                    <h3>Mecha de Asalto</h3>
+                    <p>Escala 28mm. Listo para entornos de wargames de ciencia ficción.</p>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="gallery-item">
+                <img src="./assets/img/hechicero-arcano.jpg" alt="Miniatura 3">
+                <div class="gallery-info">
+                    <span class="gallery-tag">Edición Limitada</span>
+                    <h3>Alto Elfo Arcano</h3>
+                    <p>Pieza de exhibición con peana escénica decorada con vegetación real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
         </main>
 
            
-            <footer>
-                <p>Copyright © 2026 Pablo Napoli.</p>          
-            </footer>
+          <footer>
+            <div class="container footer-content">
+                <p>Copyright © 2026 El Taller de Miniaturas. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/pablofn92" target="_blank">
+                      <img class="animate__animated animate__bounce github-foto" src="#" alt="Logo Github"></a>
+                </div>
+            </div>
+          </footer>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
 </html>

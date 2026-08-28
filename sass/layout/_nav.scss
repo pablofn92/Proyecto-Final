@@ -2,10 +2,34 @@
 @use "../utilities/mixins" as*;
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  
+    border-radius: 5px;
+            top: 0;
+            z-index: 1000;
+            .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+}
+
+
+.bg-dark-custom {
+    background-color: $bg-oscuro;
+}
+
+/* Asegura que los textos del menú se lean correctamente sobre fondo oscuro */
+.navbar-dark 
+.nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+.navbar-dark .nav-link.active, 
+.navbar-dark {
+    color: #ffffff !important;
+}
+
+/* Estilo opcional para controlar el tamaño de tu logo si es muy grande */
+.logo {
+    max-height: 100px; 
+    object-fit: contain;
 }
