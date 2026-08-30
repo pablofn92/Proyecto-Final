@@ -1,14 +1,54 @@
 @use "../utilities/variables" as*;
 @use "../utilities/mixins" as*;
+@use "../base/tipografia" as*;
 
-.carousel-item {
-    max-height: 450px;
-    max-width: 450px;
-justify-content: center;
+.fondo{
+    background-image: url('../assets/img/fondo-principal.png');
+    padding: 150px 0px 0px; 
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(18, 18, 18, 1)), 
+    no-repeat center center/cover;
+            
 }
 
-body {
-    padding-top: 150px; 
+.hero-content {
+    max-width: 800px;        
+    margin: 40px auto;
+        h1 {
+        font-size: 3rem;       
+        color: $color-principal;
+        font-family: $font-titulo;        
+                p {
+                font-size: 1.2rem;
+                color: $color-hover;
+                margin-bottom: 30px;
+                }
+            }
+        }      
+        
+        
+
+.carousel {
+    width: 100%;
+    max-width: 450px;
+    max-height: 450px;
+    margin: 20px auto;
+    border-radius: 10px;
     
 }
 
+.gallery-item {    
+    width: max-content;
+    background-color: $bg-accordion-btn;
+    color: $color-principal;
+    border: $border-negro;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    padding: 20px;
+    margin-bottom: 20px;
+    &:hover {
+        background-color: $bg-transparente;
+        color: $color-hover;
+        box-shadow: $color-principal 0px 0px 10px;
+
+    }
+}

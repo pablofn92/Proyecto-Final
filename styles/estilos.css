@@ -1,35 +1,85 @@
-@charset "UTF-8";
 /*Comentario css*/
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "EB Garamond", serif;
 }
 
-.carousel-item {
-  max-height: 450px;
+.fondo {
+  background-image: url("../assets/img/fondo-principal.png");
+  padding: 150px 0px 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(18, 18, 18)), no-repeat center center/cover;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 40px auto;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  color: #ffa500;
+  font-family: "Cinzel", serif;
+}
+.hero-content h1 p {
+  font-size: 1.2rem;
+  color: aliceblue;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  width: 100%;
   max-width: 450px;
-  justify-content: center;
+  max-height: 450px;
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
-body {
-  padding-top: 150px;
+.gallery-item {
+  width: max-content;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #ffa500;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.gallery-item:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  box-shadow: #ffa500 0px 0px 10px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ffa500;
+  color: #0f0f0f;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.btn:hover {
+  background-color: aliceblue;
+  transform: translateY(-2px);
 }
 
 footer {
   background-color: #0f0f0f;
   padding: 20px 0;
   font-size: 0.9rem;
-  color: #79c3ee;
+  color: #ffa500;
 }
-footer .footer-content, footer .footer-content .footer-links {
+footer .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
 }
+
 header {
   padding: 1px;
   margin-bottom: 50px;
@@ -38,6 +88,7 @@ header {
 nav {
   border-radius: 5px;
   top: 0;
+  font-size: 1.5rem;
   z-index: 1000;
 }
 nav .navbar {
@@ -47,22 +98,10 @@ nav .navbar {
   height: 70px;
 }
 
-/* Tu fondo personalizado oscuro y opaco para el nicho de miniaturas */
 .bg-dark-custom {
-  background-color: #6b1414 !important; /* Gris oscuro profundo, ideal para resaltar fotos */
+  background-color: #0f0f0f;
 }
 
-/* Asegura que los textos del menú se lean correctamente sobre fondo oscuro */
-.navbar-dark .nav-link {
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-
-.navbar-dark .nav-link.active,
-.navbar-dark {
-  color: #ffffff !important;
-}
-
-/* Estilo opcional para controlar el tamaño de tu logo si es muy grande */
 .logo {
   max-height: 100px;
   object-fit: contain;

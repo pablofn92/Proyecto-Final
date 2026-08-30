@@ -12,11 +12,11 @@
         <meta name="keywords" content="Pablo Napoli, desarrollador web, programación, proyectos web, sobre mi, contacto">
 </head>
 
-<body>
+<body class="fondo">
 <header class="fixed-top">                        
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom border-bottom border-secondary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="./index.html">
         <img class="logo animate__animated animate__fadeIn" src="./assets/img/logo-pagina.jpg" alt="Logo Pagina">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,18 +25,18 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto"> 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./pages/1.html">1</a>
+            <a class="nav-link" aria-current="page" href="./pages/miniaturas.html">Miniaturas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/2.html">2</a>
+            <a class="nav-link" href="./pages/pinturas.html">Pinturas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/3.html">3</a>
+            <a class="nav-link" href="./pages/impresoras-3d.html">Impresoras 3D</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown link</a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
             <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="./pages/4.html">4</a></li>
+              <li><a class="dropdown-item" href="./pages/recomendaciones.html">Recomendaciones</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
@@ -48,66 +48,66 @@
 </header>
     <main>
       
-        <div class="container hero-content animate__animated animate__fadeInUp">
-            <h1>El Arte a Escala en un Solo Lugar</h1>
-            <p>Explorá universos en miniatura, modelos históricos y colecciones listas para el campo de batalla.</p>
-            <a href="#galeria" class="btn">Ver Colección</a>
+          <div class="container hero-content animate__animated animate__fadeInUp">
+              <h1>El Arte a Escala en un Solo Lugar</h1>
+              <p>Explorá universos en miniatura, modelos históricos y colecciones listas para el campo de batalla.</p>
+              <a href="#galeria" class="btn">Ver Colección</a>
+          </div>
+     
+          <section class="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button"               data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+           </div>
+          <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img src="./assets/img/miniaturas.jpg" class="d-block w-100" alt="Miniaturas-en-blanco">
+        <div class="carousel-caption d-none d-md-block">
+             <h5>First slide label</h5>
+             <p>Some representative placeholder content for the first slide.</p>
+             </div>
+            </div>
+           <div class="carousel-item">
+              <img src="./assets/img/pinturas-acrilicas.jpg" class="d-block w-100"  alt="Pinturas-acrilicas">
+              <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+           </div>
+       <div class="carousel-item">
+        <img src="./assets/img/impresora-3d.jpg" class="d-block w-100" alt="impresoras-3d">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
         </div>
-    </section>
-
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button"               data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+    </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./assets/img/miniaturas.jpg" class="d-block w-100" alt="Miniaturas-en-blanco">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="./assets/img/pinturas-acrilicas.jpg" class="d-block w-100" alt="Pinturas-acrilicas">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="./assets/img/impresora-3d.jpg" class="d-block w-100" alt="impresoras-3d">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
+</section>
 
 <section id="galeria" class="container sections-padding">
         <h2 class="section-title">Miniaturas Destacadas</h2>
         <div class="gallery-grid">
-            <!-- Item 1 -->
+            
             <div class="gallery-item">
-                <img src="./assets/img/shaneesh-defiler.jpeg" alt="Miniatura 1">
+                <img src="./assets/img/shaneesh-defiler.jpg" alt="Miniatura 1">
                 <div class="gallery-info">
                     <span class="gallery-tag">Pintado a Mano</span>
                     <h3>Guerrero del Caos</h3>
                     <p>Escala 32mm. Detalle en armadura oxidada y efectos de luz (OSL).</p>
                 </div>
             </div>
-            <!-- Item 2 -->
+           
             <div class="gallery-item">
                 <img src="./assets/img/mecha-de-asalto.jpg" alt="Miniatura 2">
                 <div class="gallery-info">
@@ -116,7 +116,7 @@
                     <p>Escala 28mm. Listo para entornos de wargames de ciencia ficción.</p>
                 </div>
             </div>
-            <!-- Item 3 -->
+            
             <div class="gallery-item">
                 <img src="./assets/img/hechicero-arcano.jpg" alt="Miniatura 3">
                 <div class="gallery-info">
@@ -133,7 +133,7 @@
            
           <footer>
             <div class="container footer-content">
-                <p>Copyright © 2026 El Taller de Miniaturas. Todos los derechos reservados.</p>
+                <p>Copyright © 2026 Mundo Miniaturas. Todos los derechos reservados.</p>
                 <div class="footer-links">
                     <a href="https://github.com/pablofn92" target="_blank">
                       <img class="animate__animated animate__bounce github-foto" src="#" alt="Logo Github"></a>

@@ -51,7 +51,6 @@ nav .navbar {
   background-color: #0f0f0f;
 }
 
-/* Asegura que los textos del menú se lean correctamente sobre fondo oscuro */
 .navbar-dark .nav-link {
   color: rgba(255, 255, 255, 0.8) !important;
 }
@@ -61,7 +60,7 @@ nav .navbar {
   color: #ffffff !important;
 }
 
-/* Estilo opcional para controlar el tamaño de tu logo si es muy grande */
+
 .logo {
   max-height: 100px;
   object-fit: contain;

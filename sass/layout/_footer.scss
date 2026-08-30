@@ -1,5 +1,6 @@
 @use "../utilities/variables" as*;
 @use "../utilities/mixins" as*;
+@use "../base/tipografia" as*;
 
 footer {
             background-color: $bg-oscuro;
@@ -12,8 +13,6 @@ footer {
                 align-items: center;
                 flex-wrap: wrap;
                 gap: 20px;
-                    .footer-links {
-                        @extend .footer-content                        
-                }
-        }
+                
     }
+}

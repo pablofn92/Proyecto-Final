@@ -1,2 +1,17 @@
 @use "../utilities/variables" as*;
 @use "../utilities/mixins" as*;
+@use "../base/tipografia" as*;
+
+ .btn {
+            display: inline-block;
+            background-color: $color-principal;
+            color: $bg-oscuro;
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+                &:hover {
+                background-color: $color-hover;
+                transform: translateY(-2px);
+                }
+        }

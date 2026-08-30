@@ -1,9 +1,11 @@
 @use "../utilities/variables" as*;
 @use "../utilities/mixins" as*;
+@use "../base/tipografia" as*;
 
 nav {
     border-radius: 5px;
             top: 0;
+            font-size: 1.5rem;
             z-index: 1000;
             .navbar {
             display: flex;
@@ -16,19 +18,10 @@ nav {
 
 .bg-dark-custom {
     background-color: $bg-oscuro;
+   
 }
 
-/* Asegura que los textos del menú se lean correctamente sobre fondo oscuro */
-.navbar-dark 
-.nav-link {
-    color: rgba(255, 255, 255, 0.8) !important;
-}
-.navbar-dark .nav-link.active, 
-.navbar-dark {
-    color: #ffffff !important;
-}
 
-/* Estilo opcional para controlar el tamaño de tu logo si es muy grande */
 .logo {
     max-height: 100px; 
     object-fit: contain;
