@@ -2,30 +2,37 @@
 @use "../utilities/mixins" as*;
 @use "../base/tipografia" as*;
 
-.fondo{
-    background-image: url('../assets/img/fondo-principal.png');
-    padding: 150px 0px 0px; 
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(18, 18, 18, 1)), 
-    no-repeat center center/cover;
-            
+body {
+    background-image: 
+        linear-gradient(rgba(148, 146, 146, 0.5), rgba(0, 0, 0, 0.733)),
+        url('../assets/img/fondo-principal.png'), 
+        linear-gradient(180deg, $color-secundario, $bg-oscuro);
+    background-size: cover, contain, cover; 
+    background-position: top, top, top;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    min-height: 100vh;
+    padding: 160px 10px 10px; 
+    margin: 0;
 }
 
 .hero-content {
     max-width: 800px;        
     margin: 40px auto;
-        h1 {
+    
+    h1 {
         font-size: 3rem;       
         color: $color-principal;
         font-family: $font-titulo;        
-                p {
-                font-size: 1.2rem;
-                color: $color-hover;
-                margin-bottom: 30px;
-                }
-            }
-        }      
+    }
+    
+    p {
+        font-size: 1.2rem;
+        color: $color-hover;
+        margin-bottom: 30px;
+    }
+}         
         
-        
+
 
 .carousel {
     width: 100%;
@@ -36,19 +43,34 @@
     
 }
 
-.gallery-item {    
-    width: max-content;
+.gallery-item, .titulo-miniaturas, .historia-miniaturas, .el-hobby-moderno, .evolucion-y-marcas, .tecnicas-y-quimica {    
+    display: inline-block; 
+    width: auto;
+    box-sizing: border-box; 
     background-color: $bg-accordion-btn;
     color: $color-principal;
     border: $border-negro;
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
-    padding: 20px;
+    padding: 24px;
     margin-bottom: 20px;
-    &:hover {
+
+        &:hover {
         background-color: $bg-transparente;
         color: $color-hover;
         box-shadow: $color-principal 0px 0px 10px;
+        }
+}
 
-    }
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 15px 0;
+    object-fit: cover;
+    border: 1px solid var($borde);
+}
+
+section {
+    margin-bottom: 40px;
 }

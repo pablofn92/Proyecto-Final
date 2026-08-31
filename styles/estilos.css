@@ -1,5 +1,13 @@
+@charset "UTF-8";
 /*Comentario css*/
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+h1, h2, h3 {
+  color: #ffd700;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: "EB Garamond", serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +15,14 @@
   font-family: "EB Garamond", serif;
 }
 
-.fondo {
-  background-image: url("../assets/img/fondo-principal.png");
-  padding: 150px 0px 0px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(18, 18, 18)), no-repeat center center/cover;
+body {
+  background-image: linear-gradient(rgba(148, 146, 146, 0.5), rgba(0, 0, 0, 0.733)), url("../assets/img/fondo-principal.png"), linear-gradient(180deg, #1a1815, #0f0f0f);
+  background-size: cover, contain, cover;
+  background-position: top, top, top;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  min-height: 100vh;
+  padding: 160px 10px 10px;
+  margin: 0;
 }
 
 .hero-content {
@@ -22,7 +34,7 @@
   color: #ffa500;
   font-family: "Cinzel", serif;
 }
-.hero-content h1 p {
+.hero-content p {
   font-size: 1.2rem;
   color: aliceblue;
   margin-bottom: 30px;
@@ -36,20 +48,35 @@
   border-radius: 10px;
 }
 
-.gallery-item {
-  width: max-content;
+.gallery-item, .titulo-miniaturas, .historia-miniaturas, .el-hobby-moderno, .evolucion-y-marcas, .tecnicas-y-quimica {
+  display: inline-block;
+  width: auto;
+  box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.1);
   color: #ffa500;
   border: 2px solid #000000;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
-  padding: 20px;
+  padding: 24px;
   margin-bottom: 20px;
 }
-.gallery-item:hover {
+.gallery-item:hover, .titulo-miniaturas:hover, .historia-miniaturas:hover, .el-hobby-moderno:hover, .evolucion-y-marcas:hover, .tecnicas-y-quimica:hover {
   background-color: rgba(0, 0, 0, 0.5);
   color: aliceblue;
   box-shadow: #ffa500 0px 0px 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 15px 0;
+  object-fit: cover;
+  border: 1px solid var(#2e2e38);
+}
+
+section {
+  margin-bottom: 40px;
 }
 
 .btn {
@@ -105,6 +132,50 @@ nav .navbar {
 .logo {
   max-height: 100px;
   object-fit: contain;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.historia-miniaturas,
+.el-hobby-moderno, .evolucion-y-marcas,
+.tecnicas-y-quimica {
+  display: grid;
+  grid-template-columns: 1fr; /* Una sola columna en celulares */
+  gap: 32px; /* Espacio uniforme entre los artículos */
+  padding: 40px 16px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.historia-miniaturas h2,
+.el-hobby-moderno h2, .evolucion-y-marcas h2,
+.tecnicas-y-quimica h2 {
+  grid-column: 1/-1;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 2rem;
+  width: 100%;
+}
+
+/* TABLET (Pantallas medianas desde 768px: 2 columnas) */
+@media (min-width: 768px) {
+  .gallery-grid, .historia-miniaturas,
+  .el-hobby-moderno, .evolucion-y-marcas,
+  .tecnicas-y-quimica {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* DESKTOP (Pantallas grandes desde 1024px: 3 columnas) */
+@media (min-width: 1024px) {
+  .gallery-grid, .historia-miniaturas,
+  .el-hobby-moderno, .evolucion-y-marcas,
+  .tecnicas-y-quimica {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

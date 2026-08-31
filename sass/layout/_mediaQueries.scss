@@ -1,5 +1,42 @@
-$grid-breakpoints: (
-  tablet: 768px,
-  desktop: 1024px,
-);
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 20px; 
+  width: 100%;
+}
 
+.historia-miniaturas, 
+.el-hobby-moderno, .evolucion-y-marcas,
+.tecnicas-y-quimica {
+  display: grid;
+  grid-template-columns: 1fr; /* Una sola columna en celulares */
+  gap: 32px;                  /* Espacio uniforme entre los artículos */
+  padding: 40px 16px;
+  max-width: 1200px;
+  margin: 20px auto;
+    h2 {
+    grid-column: 1 / -1; 
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+
+/* TABLET (Pantallas medianas desde 768px: 2 columnas) */
+@media (min-width: 768px) {
+  .gallery-grid, .historia-miniaturas, 
+  .el-hobby-moderno, .evolucion-y-marcas,
+  .tecnicas-y-quimica {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* DESKTOP (Pantallas grandes desde 1024px: 3 columnas) */
+@media (min-width: 1024px) {
+  .gallery-grid, .historia-miniaturas, 
+  .el-hobby-moderno, .evolucion-y-marcas,
+  .tecnicas-y-quimica {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

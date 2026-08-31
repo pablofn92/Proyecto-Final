@@ -51,15 +51,6 @@ nav .navbar {
   background-color: #0f0f0f;
 }
 
-.navbar-dark .nav-link {
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-
-.navbar-dark .nav-link.active,
-.navbar-dark {
-  color: #ffffff !important;
-}
-
 
 .logo {
   max-height: 100px;
