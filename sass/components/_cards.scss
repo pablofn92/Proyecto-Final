@@ -1,3 +1,67 @@
 @use "../utilities/variables" as*;
 @use "../utilities/mixins" as*;
 @use "../base/tipografia" as*;
+
+
+$card-bg: $bg-accordion-btn;
+$card-border: $border-negro;
+$card-text-color: $color-principal;
+$card-shadow-hover: $color-principal;
+$card-accent: $color-hover;
+
+
+.card-hobby {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $card-bg;
+  color: $card-text-color;
+  border: $card-border;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.3s ease-in-out;
+
+
+  &:hover {
+    background-color: $bg-transparente;
+    color: $card-accent;
+    box-shadow: 0 10px 20px rgba($card-shadow-hover, 0.15), 
+                0 0 12px rgba($card-shadow-hover, 0.3);
+    transform: translateY(-4px); 
+    
+    .card-hobby__title {
+      color: $card-accent;
+    }
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    margin: 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba($card-text-color, 0.2);
+    transition: color 0.3s ease;
+  }
+
+  &__list {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__item {
+    line-height: 1.5;
+    font-size: 0.95rem;
+
+
+    strong {
+      color: inherit;
+      display: inline-block;
+      margin-right: 4px;
+    }
+  }
+}

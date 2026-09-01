@@ -5,22 +5,22 @@
 nav {
     border-radius: 5px;
             top: 0;
-            font-size: 1.5rem;
+            font-size: 1rem;
             z-index: 1000;
             .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             height: 70px;
-        }
+                
+            }
+          
 }
-
 
 .bg-dark-custom {
     background-color: $bg-oscuro;
    
 }
-
 
 .logo {
     max-height: 100px; 

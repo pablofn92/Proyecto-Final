@@ -31,7 +31,6 @@ body {
         margin-bottom: 30px;
     }
 }         
-        
 
 
 .carousel {
@@ -40,10 +39,17 @@ body {
     max-height: 450px;
     margin: 20px auto;
     border-radius: 10px;
-    
+    h5, p{
+      color: $color-principal;
+      &:hover {
+        border: $border-negro;
+        background-color: $bg-transparente;
+        animation: github-bounce 0.6s ease-in-out forwards;
+      }
+    }
 }
 
-.gallery-item, .titulo-miniaturas, .historia-miniaturas, .el-hobby-moderno, .evolucion-y-marcas, .tecnicas-y-quimica {    
+.gallery-item, .titulo-miniaturas, .historia-miniaturas, .el-hobby-moderno, .evolucion-y-marcas, .tecnicas-y-quimica, .tipos-de-impresora3d, .resina, .filamento, .conclusion, .comparativa {    
     display: inline-block; 
     width: auto;
     box-sizing: border-box; 
@@ -68,9 +74,94 @@ img {
     border-radius: 6px;
     margin: 15px 0;
     object-fit: cover;
-    border: 1px solid var($borde);
+
 }
 
 section {
     margin-bottom: 40px;
+}
+
+
+.tipos-de-impresora3d + section img {
+  width: 100%;
+  max-width: 280px;
+  height: 180px;      
+  object-fit: contain; 
+  
+  border-radius: 6px;
+  display: block;
+  margin: 12px auto;
+}
+
+
+.conclusion {
+  text-align: center;
+  max-width: 850px; 
+  margin: 0 auto 40px auto;
+  padding: 0 16px;
+  
+  h1, h2 {
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 20px; 
+  width: 100%;
+}
+
+.historia-miniaturas, 
+.el-hobby-moderno, .evolucion-y-marcas,
+.tecnicas-y-quimica, .tipos-de-impresora3d + section, .tipos-de-impresora3d + section, .niveles-grid {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 32px;                  
+  padding: 40px 16px;
+  max-width: 1200px;
+  margin: 40px auto;
+    h2 {
+    grid-column: 1 / -1; 
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+
+
+.tipos-de-impresora3d + section {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 32px;                  
+  padding: 20px 16px;
+  max-width: 1400px;          
+  margin: 0 auto;
+}
+
+.recomendacion {
+    text-align: center;
+    h1 {
+        color: $color-principal;
+        
+    }
+        p {
+            color: $color-hover;
+        
+        }
+}
+
+.niveles-grid {
+  display: grid;
+  grid-template-columns: 1fr; // 🟢 Mobile por defecto: 1 sola columna
+  gap: 32px;                  // Espacio uniforme entre tarjetas
+  width: 100%;
+  max-width: 1300px;
+  margin: 40px auto 0 auto;   // Separa la grilla del texto introductorio
 }

@@ -1,6 +1,23 @@
-@charset "UTF-8";
 /*Comentario css*/
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@keyframes latido-rotativo {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.05) rotate(2deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.efecto-destacado {
+  transition: transform 0.3s ease-in-out;
+}
+.efecto-destacado:hover {
+  animation: latido-rotativo 1.2s ease-in-out infinite;
+}
+
 h1, h2, h3 {
   color: #ffd700;
   font-weight: 700;
@@ -47,20 +64,28 @@ body {
   margin: 20px auto;
   border-radius: 10px;
 }
+.carousel h5, .carousel p {
+  color: #ffa500;
+}
+.carousel h5:hover, .carousel p:hover {
+  border: 2px solid #1f1b1b;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: github-bounce 0.6s ease-in-out forwards;
+}
 
-.gallery-item, .titulo-miniaturas, .historia-miniaturas, .el-hobby-moderno, .evolucion-y-marcas, .tecnicas-y-quimica {
+.gallery-item, .titulo-miniaturas, .historia-miniaturas, .el-hobby-moderno, .evolucion-y-marcas, .tecnicas-y-quimica, .tipos-de-impresora3d, .resina, .filamento, .conclusion, .comparativa {
   display: inline-block;
   width: auto;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.1);
   color: #ffa500;
-  border: 2px solid #000000;
+  border: 2px solid #1f1b1b;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
   padding: 24px;
   margin-bottom: 20px;
 }
-.gallery-item:hover, .titulo-miniaturas:hover, .historia-miniaturas:hover, .el-hobby-moderno:hover, .evolucion-y-marcas:hover, .tecnicas-y-quimica:hover {
+.gallery-item:hover, .titulo-miniaturas:hover, .historia-miniaturas:hover, .el-hobby-moderno:hover, .evolucion-y-marcas:hover, .tecnicas-y-quimica:hover, .tipos-de-impresora3d:hover, .resina:hover, .filamento:hover, .conclusion:hover, .comparativa:hover {
   background-color: rgba(0, 0, 0, 0.5);
   color: aliceblue;
   box-shadow: #ffa500 0px 0px 10px;
@@ -72,25 +97,151 @@ img {
   border-radius: 6px;
   margin: 15px 0;
   object-fit: cover;
-  border: 1px solid var(#2e2e38);
 }
 
 section {
   margin-bottom: 40px;
 }
 
-.btn {
+.tipos-de-impresora3d + section img {
+  width: 100%;
+  max-width: 280px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 6px;
+  display: block;
+  margin: 12px auto;
+}
+
+.conclusion {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 40px auto;
+  padding: 0 16px;
+}
+.conclusion h1, .conclusion h2 {
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.conclusion p {
+  line-height: 1.6;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.historia-miniaturas,
+.el-hobby-moderno, .evolucion-y-marcas,
+.tecnicas-y-quimica, .tipos-de-impresora3d + section, .tipos-de-impresora3d + section, .niveles-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  padding: 40px 16px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+.historia-miniaturas h2,
+.el-hobby-moderno h2, .evolucion-y-marcas h2,
+.tecnicas-y-quimica h2, .tipos-de-impresora3d + section h2, .tipos-de-impresora3d + section h2, .niveles-grid h2 {
+  grid-column: 1/-1;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.tipos-de-impresora3d + section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  padding: 20px 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.recomendacion {
+  text-align: center;
+}
+.recomendacion h1 {
+  color: #ffa500;
+}
+.recomendacion p {
+  color: aliceblue;
+}
+
+.niveles-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 40px auto 0 auto;
+}
+
+.btn, .nav-link {
   display: inline-block;
+  justify-content: space-between;
   background-color: #ffa500;
   color: #0f0f0f;
-  padding: 12px 30px;
+  padding: 12px 20px;
   border-radius: 4px;
   font-weight: bold;
   transition: background-color 0.3s, transform 0.2s;
 }
-.btn:hover {
-  background-color: aliceblue;
+.btn:hover, .nav-link:hover {
+  background-color: #ffd700;
   transform: translateY(-2px);
+}
+
+.card-hobby {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #ffa500;
+  border: 2px solid #1f1b1b;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.3s ease-in-out;
+}
+.card-hobby:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  box-shadow: 0 10px 20px rgba(255, 165, 0, 0.15), 0 0 12px rgba(255, 165, 0, 0.3);
+  transform: translateY(-4px);
+}
+.card-hobby:hover .card-hobby__title {
+  color: aliceblue;
+}
+.card-hobby__title {
+  font-size: 1.4rem;
+  margin: 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(255, 165, 0, 0.2);
+  transition: color 0.3s ease;
+}
+.card-hobby__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card-hobby__item {
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+.card-hobby__item strong {
+  color: inherit;
+  display: inline-block;
+  margin-right: 4px;
 }
 
 footer {
@@ -107,6 +258,30 @@ footer .footer-content {
   gap: 20px;
 }
 
+.github-logo {
+  width: 50px;
+  height: 50px;
+  transition: fill 0.3s ease;
+}
+
+.github-logo:hover {
+  animation: github-bounce 0.6s ease-in-out forwards;
+}
+
+@keyframes github-bounce {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  30% {
+    transform: scale(1.15) rotate(-8deg);
+  }
+  60% {
+    transform: scale(1.05) rotate(6deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(0deg);
+  }
+}
 header {
   padding: 1px;
   margin-bottom: 50px;
@@ -115,7 +290,7 @@ header {
 nav {
   border-radius: 5px;
   top: 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
   z-index: 1000;
 }
 nav .navbar {
@@ -134,47 +309,20 @@ nav .navbar {
   object-fit: contain;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  width: 100%;
-}
-
-.historia-miniaturas,
-.el-hobby-moderno, .evolucion-y-marcas,
-.tecnicas-y-quimica {
-  display: grid;
-  grid-template-columns: 1fr; /* Una sola columna en celulares */
-  gap: 32px; /* Espacio uniforme entre los artículos */
-  padding: 40px 16px;
-  max-width: 1200px;
-  margin: 20px auto;
-}
-.historia-miniaturas h2,
-.el-hobby-moderno h2, .evolucion-y-marcas h2,
-.tecnicas-y-quimica h2 {
-  grid-column: 1/-1;
-  text-align: center;
-  margin-bottom: 16px;
-  font-size: 2rem;
-  width: 100%;
-}
-
-/* TABLET (Pantallas medianas desde 768px: 2 columnas) */
 @media (min-width: 768px) {
   .gallery-grid, .historia-miniaturas,
   .el-hobby-moderno, .evolucion-y-marcas,
-  .tecnicas-y-quimica {
+  .tecnicas-y-quimica, .tipos-de-impresora3d + section, .tipos-de-impresora3d + section, .niveles-grid {
     grid-template-columns: repeat(2, 1fr);
+    align-items: start;
   }
 }
-/* DESKTOP (Pantallas grandes desde 1024px: 3 columnas) */
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
   .gallery-grid, .historia-miniaturas,
   .el-hobby-moderno, .evolucion-y-marcas,
-  .tecnicas-y-quimica {
+  .tecnicas-y-quimica, .tipos-de-impresora3d + section, .niveles-grid {
     grid-template-columns: repeat(3, 1fr);
+    align-items: start;
   }
 }
 

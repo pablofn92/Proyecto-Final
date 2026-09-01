@@ -2,16 +2,17 @@
 @use "../utilities/mixins" as*;
 @use "../base/tipografia" as*;
 
- .btn {
+ .btn, .nav-link{
             display: inline-block;
+            justify-content: space-between;    
             background-color: $color-principal;
             color: $bg-oscuro;
-            padding: 12px 30px;
+            padding: 12px 20px;
             border-radius: 4px;
             font-weight: bold;
             transition: background-color 0.3s, transform 0.2s;
                 &:hover {
-                background-color: $color-hover;
+                background-color: $color-terciario;
                 transform: translateY(-2px);
                 }
         }
