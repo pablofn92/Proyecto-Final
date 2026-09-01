@@ -4,8 +4,8 @@
 
 La versión de producción ya se encuentra desplegada y se puede visualizar de forma interactiva en internet.
 
-🌐 **Link del sitio web en GitHub:** [Visitar Proyecto Final](https://pablofn92.github.io/Proyecto-Final/)
-🌐 **Link del sitio web en Vercel:** [Visitar Proyecto Final](https://proyecto-final-peach-ten.vercel.app/)
+🌐 **Link del sitio web en [**GitHub:**](https://pablofn92.github.io/Proyecto-Final/)
+🌐 **Link del sitio web en [**Vercel:**](https://proyecto-final-peach-ten.vercel.app/)
 
 ---
 
