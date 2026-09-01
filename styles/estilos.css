@@ -11,13 +11,20 @@
     transform: scale(1) rotate(0deg);
   }
 }
-.efecto-destacado {
-  transition: transform 0.3s ease-in-out;
+@keyframes github-bounce {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  30% {
+    transform: scale(1.15) rotate(-8deg);
+  }
+  60% {
+    transform: scale(1.05) rotate(6deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(0deg);
+  }
 }
-.efecto-destacado:hover {
-  animation: latido-rotativo 1.2s ease-in-out infinite;
-}
-
 h1, h2, h3 {
   color: #ffd700;
   font-weight: 700;
@@ -89,6 +96,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   color: aliceblue;
   box-shadow: #ffa500 0px 0px 10px;
+  transform: translateY(-5px);
 }
 
 img {
@@ -182,6 +190,19 @@ section {
   margin: 40px auto 0 auto;
 }
 
+.efecto-destacado {
+  transition: transform 0.3s ease-in-out;
+}
+.efecto-destacado:hover {
+  scale: 1.3;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+  border: 1px solid #ffffff;
+  transition: 1.25s ease;
+  color: aliceblue;
+  box-shadow: #ffa500 0px 0px 10px;
+  animation: latido-rotativo 1.2s ease-in-out infinite;
+}
+
 .btn, .nav-link {
   display: inline-block;
   justify-content: space-between;
@@ -263,25 +284,16 @@ footer .footer-content {
   height: 50px;
   transition: fill 0.3s ease;
 }
-
 .github-logo:hover {
+  scale: 1.3;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+  border: 1px solid #ffffff;
+  transition: 1.25s ease;
+  color: aliceblue;
+  box-shadow: #ffa500 0px 0px 10px;
   animation: github-bounce 0.6s ease-in-out forwards;
 }
 
-@keyframes github-bounce {
-  0% {
-    transform: scale(1) rotate(0deg);
-  }
-  30% {
-    transform: scale(1.15) rotate(-8deg);
-  }
-  60% {
-    transform: scale(1.05) rotate(6deg);
-  }
-  100% {
-    transform: scale(1.1) rotate(0deg);
-  }
-}
 header {
   padding: 1px;
   margin-bottom: 50px;

@@ -35,10 +35,18 @@ $font-cuerpo: "EB Garamond", serif;
   }
 }
 
-.efecto-destacado {
-  transition: transform 0.3s ease-in-out;
-  &:hover {
-    
-    animation: latido-rotativo 1.2s ease-in-out infinite;
+@keyframes github-bounce {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  30% {
+    transform: scale(1.15) rotate(-8deg); 
+  }
+  60% {
+    transform: scale(1.05) rotate(6deg); 
+  }
+  100% {
+    transform: scale(1.1) rotate(0deg);  
   }
 }
+
