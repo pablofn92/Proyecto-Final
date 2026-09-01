@@ -30,7 +30,7 @@ Este proyecto fue desarrollado utilizando el siguiente stack tecnológico:
 
 ## ✒️ Autor
 
-*   **Pablo** - *Desarrollo Completo* - [pablofn92](https://github.com)
+*   **Pablo** - *Desarrollo Completo* - [pablofn92]([https://github.com](https://github.com/pablofn92?tab=repositories))
 
 ---
 *Este proyecto fue realizado con fines educativos y de aprendizaje profesional.*
