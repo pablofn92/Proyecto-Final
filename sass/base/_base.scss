@@ -159,9 +159,9 @@ section {
 
 .niveles-grid {
   display: grid;
-  grid-template-columns: 1fr; // 🟢 Mobile por defecto: 1 sola columna
-  gap: 32px;                  // Espacio uniforme entre tarjetas
+  grid-template-columns: 1fr;
+  gap: 32px;                  
   width: 100%;
   max-width: 1300px;
-  margin: 40px auto 0 auto;   // Separa la grilla del texto introductorio
+  margin: 40px auto 0 auto;   
 }

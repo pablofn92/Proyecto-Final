@@ -22,24 +22,23 @@ $font-titulo: "Cinzel", serif;
 $font-cuerpo: "EB Garamond", serif;
 
 
-// 1. Definimos la animación con @keyframes y transform
 @keyframes latido-rotativo {
   0% {
     transform: scale(1) rotate(0deg);
   }
   50% {
-    // Agranda el elemento un 5% y lo inclina 2 grados hacia la derecha
+  
     transform: scale(1.05) rotate(2deg); 
   }
   100% {
     transform: scale(1) rotate(0deg);
   }
 }
-// 2. Creamos la clase para aplicar el efecto al pasar el mouse (Hover)
+
 .efecto-destacado {
   transition: transform 0.3s ease-in-out;
   &:hover {
-    // Llama a la animación, dura 1.2 segundos y se repite infinitamente mientras esté el mouse encima
+    
     animation: latido-rotativo 1.2s ease-in-out infinite;
   }
 }
