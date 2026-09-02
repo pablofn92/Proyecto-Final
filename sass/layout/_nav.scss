@@ -3,23 +3,10 @@
 @use "../base/tipografia" as*;
 
 nav {
-  border-radius: 5px;
-
-  &.bg-dark-custom {
     background-color: $bg-oscuro;
-  }
-  &.navbar {
-    height: 116px;
-  }
-
-  .navbar-nav {
-    display: flex;
-    gap: 10px;
-  }
-
-  .logo {
-    top: 5px;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
     left: 0;
-    max-height: 100px;
-  }
+    width: 100%;
 }

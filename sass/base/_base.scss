@@ -10,8 +10,8 @@ body {
     background-size: cover, contain, cover; 
     background-position: top, top, top;
     min-height: 100vh;
-    padding: 20px 0 0;
-    margin: 150px 0 0 0;
+    padding: 0;
+    margin: 250px 0 0 0;
 }
 
 h1 {
@@ -67,6 +67,7 @@ h1 {
   border: $border-negro;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
+  margin: 20px;
   padding: 24px;
   margin-bottom: 20px;
 
